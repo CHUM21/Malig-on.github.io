@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spots</title>
+</head>
+<style>
+     *{
+       text-decoration: none;
+    }
+    body {
+            background-image: url(santa\ Rosa1.png);
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           
+        }
+      header {    
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        .box{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+</style>
+<body>
+    <header>
+        <div class="box">
+            <img src="logo.png" alt="City Logo" style="width: 50px; height: 50px;">
+            <span class="text">SANTA ROSA</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="color: white;">Home</a></li>
+                <li><a href="About.html" style="color: white;">About</a></li>
+                <li><a href="wala.html" style="color: white;"> Gallery</a></li>
+                <li><a href="Attraction.html" style="color: white;">Attraction</a></li>
+                <li><a href="Contact.html" style="color: white;">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="wala.html" style="color: white;"> Gallery</a></li>
+        <li><a href="Attraction.html" class="home-link">Attractions</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+    </div>
+    </div>
+    </header>
+    <div class="card-container">
+        <div class="card">
+            <img src="EK5.png">
+            <h1>Enchanted Kingdom</h1>
+            <p>
+                Enchanted Kingdom is a beloved theme park located in Santa Rosa, Laguna, Philippines. 
+                Covering 25 hectares, it offers a variety of rides and attractions for all ages. 
+                The park is managed and operated by Enchanted Kingdom Inc.
+            </p>
+            <a href="https://www.enchantedkingdom.ph/about-ek-affiliations/"
+                class="card-button">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="tagapo.png">
+            <h1>Mount Tagapo</h1>
+            <p>
+                Mount Tagapo, also known as Susong Dalaga, is the highest point on Talim Island 
+                in Laguna de Bay, standing at 438 meters. The hike offers stunning views and 
+                is accessible by a ferry ride from Binangonan, followed by a hike through grasslands 
+                and bamboo forests. It's popular for its panoramic views and unique location.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Mount_Tagapo"
+                class="card-button">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="nuvali.png">
+            <h1>Nuvali</h1>
+            <p>
+
+                Nuvali is a 2,500-hectare eco-city in Santa Rosa, Laguna, focused on sustainable living.
+                 It features residential areas, business spaces, schools, a hotel, and recreational 
+                 spots like a multi-functional lake, biking paths, a wildlife sanctuary, and Ayala Malls Solenad.
+
+
+            </p>
+            <a href="https://www.nuvali.ph/"
+                class="card-button">Read More</a>
+        </div>
+
+        <div class="card">
+            <img src="museo.png">
+            <h1>Museo de Sta Rosa</h1>
+            <p>
+                Museo de Sta Rosa in Santa Rosa, Laguna, is a cultural museum showcasing local history 
+                and traditions. It's housed in a restored Spanish-era building and is open from 
+                10:00 AM to 8:00 PM. Perfect for history enthusiasts!
+
+            </p>
+            <a href="https://starosacitylaguna.wordpress.com/places-to-visit/museo-de-sta-rosa/"
+                class="card-button">Read More</a>
+        </div>
+        <div class="card">
+            <img src="fun.jpg">
+            <h1>The Fun Farm at Sta. Elena</h1>
+            <p>
+                The Fun Farm at Sta. Elena is a family-friendly destination in Cabuyao, Laguna.
+                 It offers a range of outdoor activities including animal interaction, horseback riding,
+                  a mini zipline, and spacious play areas. Ideal for a fun day out in nature,
+                   it's open Tuesday to Sunday from 9:00 AM to 4:00 PM.
+
+
+            </p>
+            <a href="https://staelena.com/"
+            class="card-button">Read More</a>
+    </div>
+</div>
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+    }
+</script>
+<div class="footer">
+    <p style="font-weight: bold;">© 2025 City of Santa Rosa. All rights reserved</p>
+</div>
+
+</body>
+
+</html>
